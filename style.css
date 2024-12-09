@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(58, 58, 58);
+    color: #333;
+    background-image: url('./images/img2.webp');
+    background-size: cover;
+    background-position: center;
+}
+
+h1 {
+    text-align: center;
+    color: #fff;
+    margin-top: 15rem;
+    font-size: 3rem; 
+}
+
+.joke-container {
+    background-color: #333;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0px 4px 6px #fff;
+    max-width: 500px;
+    text-align: center;
+    border: 5px solid rgb(255, 166, 0);
+    margin: auto;
+}
+
+#joke-text {
+    font-size: 20px;
+    color: rgb(255, 166, 0);
+}
+
+button {
+    background-color: rgb(255, 166, 0);
+    color: #333;
+    padding: 0.6rem;
+    border-radius: 5px;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.6s all ease-in-out;
+    font-size: 1.2rem; 
+}
+
+button:hover {
+    background-color: #333;
+    color: rgb(255, 166, 0);
+    transform: scale(1.2);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 2rem; /* Reduce font size on tablets */
+        margin-top: 8rem;
+    }
+
+    .joke-container {
+        padding: 15px;
+        max-width: 400px; /* Reduce container size on smaller devices */
+    }
+
+    #joke-text {
+        font-size: 18px; /* Smaller font for smaller screens */
+    }
+
+    button {
+        font-size: 1rem; /* Adjust button text size */
+        padding: 0.5rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 1.8rem; /* Further reduce font size on small phones */
+        margin-top: 6rem;
+    }
+
+    .joke-container {
+        max-width: 90%; /* Let the container take more width on smaller screens */
+        padding: 10px;
+    }
+
+    #joke-text {
+        font-size: 16px; /* Make the text smaller on small devices */
+    }
+
+    button {
+        font-size: 1rem;
+        padding: 0.4rem;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    h1 {
+        font-size: 1.5rem; /* Very small screens, further reduce font size */
+        margin-top: 5rem;
+    }
+
+    .joke-container {
+        max-width: 95%; /* Take almost full width */
+        padding: 8px;
+    }
+
+    #joke-text {
+        font-size: 14px; /* Even smaller text for very small devices */
+    }
+
+    button {
+        font-size: 0.9rem;
+        padding: 0.3rem;
+    }
+}
